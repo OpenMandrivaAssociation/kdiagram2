@@ -1,6 +1,6 @@
 %define major 5
-%define libname %mklibname KF5KDGantt2 %{major}
-%define devname %mklibname KF5KDGantt2 -d
+%define libname %mklibname KGantt %{major}
+%define devname %mklibname KGantt -d
 
 Name: kdiagram
 Version:	2.6.0
