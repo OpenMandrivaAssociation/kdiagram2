@@ -10,7 +10,7 @@ Version:	2.6.0
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	3
 Source0: http://download.kde.org/%{ftpdir}/%{name}/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for gantt charts
 URL: http://kde.org/
