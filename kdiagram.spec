@@ -3,14 +3,14 @@
 %define devname %mklibname KGantt -d
 
 Name: kdiagram
-Version:	2.6.1
+Version:	2.6.2
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	4
+Release:	1
 Source0: http://download.kde.org/%{ftpdir}/%{name}/%{version}/%{name}-%{version}.tar.xz
 Summary: KDE library for gantt charts
 URL: http://kde.org/
@@ -26,6 +26,8 @@ BuildRequires: cmake(Qt5Svg)
 BuildRequires: cmake(Qt5Widgets)
 BuildRequires: cmake(Qt5Sql)
 BuildRequires: sasl-devel
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 
 %description
 KDE library for gantt charts
@@ -68,3 +70,4 @@ done ) >%{name}.lang
 %{_libdir}/*.so
 %{_libdir}/cmake/*
 %{_libdir}/qt5/mkspecs/modules/*.pri
+%doc %{_docdir}/qt5/*
