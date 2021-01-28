@@ -3,7 +3,7 @@
 %define devname %mklibname KGantt -d
 
 Name: kdiagram
-Version: 2.7.0
+Version: 2.8.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
