@@ -12,7 +12,7 @@ Version: 2.8.0
 Release: 3
 Source0: http://download.kde.org/%{ftpdir}/kdiagram/%{version}/kdiagram-%{version}.tar.xz
 Summary: KDE library for gantt charts (old version)
-URL: http://kde.org/
+URL: https://kde.org/
 License: GPL
 Group: System/Libraries
 BuildRequires: cmake(ECM)
